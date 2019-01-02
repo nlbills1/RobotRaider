@@ -50,5 +50,6 @@ That's it.  These are just quick notes of the internals of the game.  I'm sure t
 In the unlikely event that you modify the game and make a lot of money with it, congratulations!  All I ask is that you mention my game, and maybe me, in the credits somewhere.  You don't have to, of course, but I would appreciate it.
 
 Nathan Bills
+
 bills.nathanael@gmail.com 
 
