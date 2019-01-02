@@ -1,5 +1,5 @@
 # RobotRaider
-A simple game where robots throw pies and other baked goods, zap bolts, and EMP grenades at each other
+A simple game where robots throw pies and other baked goods, zap bolts, and EMP grenades at each other.
 
 I created a game called RobotRaider, a simple game where robots through pies and other baked goods at each other.  It was created in Swift 4 using SceneKit, a SpriteKit overlay, and Core Data for tracking the player’s progress.  It’s free to for folks to use with a MIT license, although it is missing the sounds created with GarageBand.  To play the game with all of the sounds one would need to download the game from the App Store, where it is free.  Here’s sort of a simple intro for RobotRaider:
 
