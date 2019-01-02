@@ -1,4 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LevelInfo" representedClassName="LevelInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="achievementStars" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="highestNumPowerUpsFound" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="highestNumRobotsDestroyed" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastNumPowerUpsFound" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastNumRobotsDestroyed" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="levelCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="levelNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maxPowerUpsToFind" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maxRobotsToDestroy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numPartsFoundSoFar" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partNumEnd" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partNumStart" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Parts" representedClassName="Parts" syncable="YES" codeGenerationType="class">
+        <attribute name="partNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="prizeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="retrieved" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="PlayerInventoryList" representedClassName="PlayerInventoryList" syncable="YES" codeGenerationType="class">
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numPartsSoFar" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="requiredNumberOfParts" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unlocked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="PlayerState" representedClassName="PlayerState" syncable="YES" codeGenerationType="class">
+        <attribute name="cryptocoin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="currentInventorySelected" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasLedger" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasMap" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasRecipeBook" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="highestLevelSoFar" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastLevelSelected" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerSelectedAmmo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerSelectedItem1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerSelectedItem2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerSelectedItem3" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PrizePartsInLevel" representedClassName="PrizePartsInLevel" syncable="YES" codeGenerationType="class">
+        <attribute name="maxNumPartsFound" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partsEnd" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partsStart" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="prizeNamePlusLevelNum" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LevelInfo" positionX="-36" positionY="18" width="128" height="225"/>
+        <element name="Parts" positionX="-27" positionY="99" width="128" height="90"/>
+        <element name="PlayerInventoryList" positionX="-27" positionY="99" width="128" height="105"/>
+        <element name="PlayerState" positionX="-63" positionY="-18" width="128" height="225"/>
+        <element name="PrizePartsInLevel" positionX="-18" positionY="108" width="128" height="105"/>
+    </elements>
 </model>
