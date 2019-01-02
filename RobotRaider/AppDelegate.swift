@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RobotRaider
 //
-//  Created by Nathanael Bills on 1/2/19.
-//  Copyright © 2019 invasivemachines. All rights reserved.
+//  Created by Nathanael Bills on 10/13/16.
+//  Copyright © 2016 invasivemachines. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

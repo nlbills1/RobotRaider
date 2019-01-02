@@ -1,24 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kox-rl-yI3">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Level Select View Controller-->
+        <scene sceneID="Zhu-4o-qNs">
+            <objects>
+                <viewController id="kox-rl-yI3" customClass="LevelSelectViewController" customModule="RobotRaider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2K-Ob-cWe"/>
+                        <viewControllerLayoutGuide type="bottom" id="1nv-GK-zcU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uxh-1V-ox0">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="GoToGamePlay" id="kpi-nE-R61"/>
+                        <segue destination="vOf-Z2-wHd" kind="show" identifier="GoToInventorySelect" id="XcM-cv-HFF"/>
+                        <segue destination="QMj-0x-fcb" kind="show" identifier="GoToIntro" animates="NO" id="rRs-ak-N8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbp-rI-blQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.0299850074964" y="114.40000000000001"/>
+        </scene>
+        <!--Inventory Select-->
+        <scene sceneID="3ax-u0-vUp">
+            <objects>
+                <viewController id="vOf-Z2-wHd" customClass="InventorySelect" customModule="RobotRaider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N41-5I-rxW"/>
+                        <viewControllerLayoutGuide type="bottom" id="7yd-6B-csR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z7a-rS-n05">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BFk-xu-2C3" kind="unwind" identifier="unwindSegueToLevelSelect" unwindAction="unwindToLevelSelectWithUnwindSegue:" id="5va-wx-s7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZV-Ae-mNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BFk-xu-2C3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2860" y="-569"/>
+        </scene>
+        <!--Game Play View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GamePlayViewController" customModule="RobotRaider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="hb0-cd-VaB" kind="unwind" identifier="unwindSegueToLevelSelect" unwindAction="unwindToLevelSelectWithUnwindSegue:" id="EyA-LZ-bAt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="hb0-cd-VaB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="2860" y="114.69265367316342"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="7Uy-Mx-DsH">
+            <objects>
+                <viewController id="QMj-0x-fcb" customClass="IntroViewController" customModule="RobotRaider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DAl-M4-UHi"/>
+                        <viewControllerLayoutGuide type="bottom" id="wCT-hV-e4O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tLD-Ff-gAD">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <segue destination="1n1-Br-w9f" kind="unwind" identifier="unwindSegueToLevelSelect" unwindAction="unwindToLevelSelectWithUnwindSegue:" id="3EY-rU-0Y1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFc-rL-8h7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1n1-Br-w9f" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2649" y="1014"/>
         </scene>
     </scenes>
 </document>

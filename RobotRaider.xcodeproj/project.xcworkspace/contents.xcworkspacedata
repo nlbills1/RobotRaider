@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RobotRaider.xcodeproj">
+      location = "self:/Volumes/devwork/iOS/RobotRaider/RobotRaider.xcodeproj">
    </FileRef>
 </Workspace>

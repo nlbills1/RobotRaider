@@ -3,31 +3,176 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D842424B21DD481A0004A985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842424A21DD481A0004A985 /* AppDelegate.swift */; };
-		D842424D21DD481A0004A985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842424C21DD481A0004A985 /* ViewController.swift */; };
-		D842425021DD481B0004A985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D842424E21DD481A0004A985 /* Main.storyboard */; };
-		D842425321DD481B0004A985 /* RobotRaider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D842425121DD481B0004A985 /* RobotRaider.xcdatamodeld */; };
-		D842425521DD481C0004A985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D842425421DD481C0004A985 /* Assets.xcassets */; };
-		D842425821DD481C0004A985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D842425621DD481C0004A985 /* LaunchScreen.storyboard */; };
+		D802542B1E73624D00E1DBE2 /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802542A1E73624D00E1DBE2 /* RandomNumberGenerator.swift */; };
+		D80713BC1EB2A77600770E49 /* RobotRaider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D80713BA1EB2A77600770E49 /* RobotRaider.xcdatamodeld */; };
+		D80AD3D6213D99680089C90F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AD3D5213D99680089C90F /* IntroViewController.swift */; };
+		D816C5FA2140C42A0084ACF8 /* IntroFadeSequenceOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D816C5F92140C42A0084ACF8 /* IntroFadeSequenceOverlay.swift */; };
+		D81809961DB56F6D00D21EB2 /* BakedGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81809951DB56F6D00D21EB2 /* BakedGood.swift */; };
+		D81809A71DB59A9200D21EB2 /* BakedGoodSplatter.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D81809A51DB59A9200D21EB2 /* BakedGoodSplatter.scnp */; };
+		D8191909210223D700AE9F7D /* DestroyedRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8191908210223D700AE9F7D /* DestroyedRobot.swift */; };
+		D82B290A1F205C66003B45D7 /* EmptySpacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B29091F205C66003B45D7 /* EmptySpacesList.swift */; };
+		D82EE4211DF8A5D1002CA96D /* FixedLevelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EE4201DF8A5D1002CA96D /* FixedLevelComponent.swift */; };
+		D831AD101F91588C0038BA0B /* ShortCircuiting.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D831AD0E1F91588C0038BA0B /* ShortCircuiting.scnp */; };
+		D831AD111F91588C0038BA0B /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = D831AD0F1F91588C0038BA0B /* bokeh.png */; };
+		D838467B213B637200A384B1 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838467A213B637200A384B1 /* UIButtonExtensions.swift */; };
+		D83C45B21ED8BE480075B42B /* InventorySelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C45B11ED8BE480075B42B /* InventorySelect.swift */; };
+		D84C5C3D1F4CE0F90048B107 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C5C3C1F4CE0F90048B107 /* Inventory.swift */; };
+		D84FFEAC203C949F00D92A16 /* AllModelsAndMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FFEAB203C949F00D92A16 /* AllModelsAndMaterials.swift */; };
+		D85459621DF226E9001496E8 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85459611DF226E9001496E8 /* Level.swift */; };
+		D8591A41211CFB6B00B51F7B /* NodeSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8591A40211CFB6B00B51F7B /* NodeSound.swift */; };
+		D8591A45211D0BF300B51F7B /* launcherturn3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8591A44211D0BF300B51F7B /* launcherturn3.wav */; };
+		D8591A47211D0E1D00B51F7B /* puffofsteam.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8591A46211D0E1D00B51F7B /* puffofsteam.wav */; };
+		D85B2309207EB79200405FCD /* BakedGoodSplatterSmall.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D85B2308207EB79200405FCD /* BakedGoodSplatterSmall.scnp */; };
+		D8610F6C2109795900A0CE9D /* Flame.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D8610F6B2109795900A0CE9D /* Flame.scnp */; };
+		D86112B21F168337007C16DB /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86112B11F168337007C16DB /* Maze.swift */; };
+		D862BD80214AA2DA00B1A309 /* Powerup6.wav in Resources */ = {isa = PBXBuildFile; fileRef = D862BD7F214AA2DA00B1A309 /* Powerup6.wav */; };
+		D8673FC9214828DD00E94886 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8673FC8214828DC00E94886 /* UIViewExtension.swift */; };
+		D86FA7CB1ED8732B00011ABB /* LevelSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA7CA1ED8732B00011ABB /* LevelSelectViewController.swift */; };
+		D881C1851DC00EBA00F90B9E /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881C1841DC00EBA00F90B9E /* Wall.swift */; };
+		D885DCB81F91656500AC42D8 /* OnFire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D885DCB71F91656500AC42D8 /* OnFire.scnp */; };
+		D887C412208D211A00D9CD2B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D887C410208D211A00D9CD2B /* spark.png */; };
+		D89851851DB029E3000FF14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89851841DB029E3000FF14B /* AppDelegate.swift */; };
+		D89851871DB029E3000FF14B /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89851861DB029E3000FF14B /* GamePlayViewController.swift */; };
+		D898518A1DB029E3000FF14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89851881DB029E3000FF14B /* Main.storyboard */; };
+		D898518F1DB029E3000FF14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D898518E1DB029E3000FF14B /* Assets.xcassets */; };
+		D89851921DB029E3000FF14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89851901DB029E3000FF14B /* LaunchScreen.storyboard */; };
+		D898519D1DB029E3000FF14B /* RobotRaiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D898519C1DB029E3000FF14B /* RobotRaiderTests.swift */; };
+		D89851A81DB029E3000FF14B /* RobotRaiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89851A71DB029E3000FF14B /* RobotRaiderUITests.swift */; };
+		D89851B61DB02BC8000FF14B /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89851B51DB02BC8000FF14B /* GlobalConstants.swift */; };
+		D89851B81DB0378A000FF14B /* BakeryRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89851B71DB0378A000FF14B /* BakeryRoom.swift */; };
+		D89851BA1DB050FB000FF14B /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89851B91DB050FB000FF14B /* Robot.swift */; };
+		D89A7F471DC9463A009C48A7 /* ControlPanelOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A7F461DC9463A009C48A7 /* ControlPanelOverlay.swift */; };
+		D8A3FE24211A0A2A00C1711D /* GameSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3FE23211A0A2A00C1711D /* GameSounds.swift */; };
+		D8AC1CB421277A5900D8DC9F /* splat4.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8AC1CB321277A5900D8DC9F /* splat4.wav */; };
+		D8AC1CB82127836A00D8DC9F /* fry1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8AC1CB72127836A00D8DC9F /* fry1.wav */; };
+		D8ACFE561F5F10810039B6E6 /* RobotHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ACFE551F5F10810039B6E6 /* RobotHealth.swift */; };
+		D8AF36591EC2CAC500797DCA /* components.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AF36581EC2CAC500797DCA /* components.scnassets */; };
+		D8B1F16220B4D80900902CFF /* VaultLevelCompletionPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F16120B4D80900902CFF /* VaultLevelCompletionPopUpView.swift */; };
+		D8B9C4A01EAE561000D735C3 /* PlayerLevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B9C49F1EAE561000D735C3 /* PlayerLevelData.swift */; };
+		D8BA50BF1F6C9A0500570451 /* EMPGrenade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BA50BE1F6C9A0500570451 /* EMPGrenade.swift */; };
+		D8C2E53F210FCDC000DE2C41 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2E53E210FCDC000DE2C41 /* Tutorial.swift */; };
+		D8C315931F4616A300B7E534 /* PartInLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C315921F4616A300B7E534 /* PartInLevel.swift */; };
+		D8C315951F461A1400B7E534 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C315941F461A1400B7E534 /* PowerUp.swift */; };
+		D8C575FE213097F4001E950B /* static6.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8C575FD213097F4001E950B /* static6.wav */; };
+		D8C6A97D21360720005F74A7 /* crash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8C6A97C21360720005F74A7 /* crash.mp3 */; };
+		D8C71D5220769F2B0059D499 /* LevelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C71D5120769F2B0059D499 /* LevelCollectionViewCell.swift */; };
+		D8CF312E2005225900B38EDA /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF312D2005225900B38EDA /* Hole.swift */; };
+		D8E71DF4213E27E0007E0901 /* regularspeed2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8E71DF3213E27DF007E0901 /* regularspeed2.wav */; };
+		D8E71DF6213E2E34007E0901 /* regularspeed4.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8E71DF5213E2E34007E0901 /* regularspeed4.wav */; };
+		D8EAF80D1F88362100B8DA12 /* PopUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EAF80C1F88362100B8DA12 /* PopUpProtocol.swift */; };
+		D8EAF80F1F883DCD00B8DA12 /* LevelStatsPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EAF80E1F883DCD00B8DA12 /* LevelStatsPopUpView.swift */; };
+		D8F78C2021DBDCD500101A57 /* buttontap2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8F78C1F21DBDCD500101A57 /* buttontap2.wav */; };
+		D8F78C2421DBE20D00101A57 /* targettap2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D8F78C2321DBE20D00101A57 /* targettap2.wav */; };
+		D8F7E28721397F39008346CE /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7E28621397F39008346CE /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D89851991DB029E3000FF14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89851791DB029E3000FF14B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89851801DB029E3000FF14B;
+			remoteInfo = RobotRaider;
+		};
+		D89851A41DB029E3000FF14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89851791DB029E3000FF14B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89851801DB029E3000FF14B;
+			remoteInfo = RobotRaider;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		D842424721DD481A0004A985 /* RobotRaider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotRaider.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D842424A21DD481A0004A985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D842424C21DD481A0004A985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D842424F21DD481A0004A985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D842425221DD481B0004A985 /* RobotRaider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RobotRaider.xcdatamodel; sourceTree = "<group>"; };
-		D842425421DD481C0004A985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D842425721DD481C0004A985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D842425921DD481C0004A985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D802542A1E73624D00E1DBE2 /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumberGenerator.swift; sourceTree = "<group>"; };
+		D80713BB1EB2A77600770E49 /* RobotRaider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RobotRaider.xcdatamodel; sourceTree = "<group>"; };
+		D80AD3D5213D99680089C90F /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		D816C5F92140C42A0084ACF8 /* IntroFadeSequenceOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFadeSequenceOverlay.swift; sourceTree = "<group>"; };
+		D81809951DB56F6D00D21EB2 /* BakedGood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BakedGood.swift; sourceTree = "<group>"; };
+		D81809A51DB59A9200D21EB2 /* BakedGoodSplatter.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = BakedGoodSplatter.scnp; sourceTree = "<group>"; };
+		D8191908210223D700AE9F7D /* DestroyedRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestroyedRobot.swift; sourceTree = "<group>"; };
+		D82B29091F205C66003B45D7 /* EmptySpacesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySpacesList.swift; sourceTree = "<group>"; };
+		D82EE4201DF8A5D1002CA96D /* FixedLevelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedLevelComponent.swift; sourceTree = "<group>"; };
+		D831AD0E1F91588C0038BA0B /* ShortCircuiting.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = ShortCircuiting.scnp; sourceTree = "<group>"; };
+		D831AD0F1F91588C0038BA0B /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		D838467A213B637200A384B1 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		D83C45B11ED8BE480075B42B /* InventorySelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventorySelect.swift; sourceTree = "<group>"; };
+		D84C5C3C1F4CE0F90048B107 /* Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		D84FFEAB203C949F00D92A16 /* AllModelsAndMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllModelsAndMaterials.swift; sourceTree = "<group>"; };
+		D85459611DF226E9001496E8 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		D8591A40211CFB6B00B51F7B /* NodeSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSound.swift; sourceTree = "<group>"; };
+		D8591A44211D0BF300B51F7B /* launcherturn3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = launcherturn3.wav; sourceTree = "<group>"; };
+		D8591A46211D0E1D00B51F7B /* puffofsteam.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = puffofsteam.wav; sourceTree = "<group>"; };
+		D85B2308207EB79200405FCD /* BakedGoodSplatterSmall.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = BakedGoodSplatterSmall.scnp; sourceTree = "<group>"; };
+		D8610F6B2109795900A0CE9D /* Flame.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Flame.scnp; sourceTree = "<group>"; };
+		D86112B11F168337007C16DB /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+		D862BD7F214AA2DA00B1A309 /* Powerup6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Powerup6.wav; sourceTree = "<group>"; };
+		D8673FC8214828DC00E94886 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D86FA7CA1ED8732B00011ABB /* LevelSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectViewController.swift; sourceTree = "<group>"; };
+		D881C1841DC00EBA00F90B9E /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		D885DCB71F91656500AC42D8 /* OnFire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = OnFire.scnp; sourceTree = "<group>"; };
+		D887C410208D211A00D9CD2B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		D89851811DB029E3000FF14B /* RobotRaider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotRaider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89851841DB029E3000FF14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D89851861DB029E3000FF14B /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		D89851891DB029E3000FF14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D898518E1DB029E3000FF14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89851911DB029E3000FF14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D89851931DB029E3000FF14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89851981DB029E3000FF14B /* RobotRaiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotRaiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D898519C1DB029E3000FF14B /* RobotRaiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotRaiderTests.swift; sourceTree = "<group>"; };
+		D898519E1DB029E3000FF14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89851A31DB029E3000FF14B /* RobotRaiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotRaiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89851A71DB029E3000FF14B /* RobotRaiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotRaiderUITests.swift; sourceTree = "<group>"; };
+		D89851A91DB029E3000FF14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89851B51DB02BC8000FF14B /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		D89851B71DB0378A000FF14B /* BakeryRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BakeryRoom.swift; sourceTree = "<group>"; };
+		D89851B91DB050FB000FF14B /* Robot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		D89A7F461DC9463A009C48A7 /* ControlPanelOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlPanelOverlay.swift; sourceTree = "<group>"; };
+		D8A3FE23211A0A2A00C1711D /* GameSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSounds.swift; sourceTree = "<group>"; };
+		D8AC1CB321277A5900D8DC9F /* splat4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splat4.wav; sourceTree = "<group>"; };
+		D8AC1CB72127836A00D8DC9F /* fry1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fry1.wav; sourceTree = "<group>"; };
+		D8ACFE551F5F10810039B6E6 /* RobotHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotHealth.swift; sourceTree = "<group>"; };
+		D8AF36581EC2CAC500797DCA /* components.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = components.scnassets; path = RobotRaider/components.scnassets; sourceTree = "<group>"; };
+		D8B1F16120B4D80900902CFF /* VaultLevelCompletionPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultLevelCompletionPopUpView.swift; sourceTree = "<group>"; };
+		D8B9C49F1EAE561000D735C3 /* PlayerLevelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLevelData.swift; sourceTree = "<group>"; };
+		D8BA50BE1F6C9A0500570451 /* EMPGrenade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMPGrenade.swift; sourceTree = "<group>"; };
+		D8C2E53E210FCDC000DE2C41 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		D8C315921F4616A300B7E534 /* PartInLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartInLevel.swift; sourceTree = "<group>"; };
+		D8C315941F461A1400B7E534 /* PowerUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
+		D8C575FD213097F4001E950B /* static6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = static6.wav; sourceTree = "<group>"; };
+		D8C6A97C21360720005F74A7 /* crash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crash.mp3; sourceTree = "<group>"; };
+		D8C71D5120769F2B0059D499 /* LevelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8CF312D2005225900B38EDA /* Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
+		D8E71DF3213E27DF007E0901 /* regularspeed2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = regularspeed2.wav; sourceTree = "<group>"; };
+		D8E71DF5213E2E34007E0901 /* regularspeed4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = regularspeed4.wav; sourceTree = "<group>"; };
+		D8EAF80C1F88362100B8DA12 /* PopUpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpProtocol.swift; sourceTree = "<group>"; };
+		D8EAF80E1F883DCD00B8DA12 /* LevelStatsPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelStatsPopUpView.swift; sourceTree = "<group>"; };
+		D8F78C1F21DBDCD500101A57 /* buttontap2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttontap2.wav; sourceTree = "<group>"; };
+		D8F78C2321DBE20D00101A57 /* targettap2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = targettap2.wav; sourceTree = "<group>"; };
+		D8F7E28621397F39008346CE /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D842424421DD481A0004A985 /* Frameworks */ = {
+		D898517E1DB029E3000FF14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89851951DB029E3000FF14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89851A01DB029E3000FF14B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +182,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D842423E21DD481A0004A985 = {
+		D81809A31DB59A7300D21EB2 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
-				D842424921DD481A0004A985 /* RobotRaider */,
-				D842424821DD481A0004A985 /* Products */,
+				D8610F6B2109795900A0CE9D /* Flame.scnp */,
+				D81809A51DB59A9200D21EB2 /* BakedGoodSplatter.scnp */,
+				D831AD0E1F91588C0038BA0B /* ShortCircuiting.scnp */,
+				D831AD0F1F91588C0038BA0B /* bokeh.png */,
+				D885DCB71F91656500AC42D8 /* OnFire.scnp */,
+				D85B2308207EB79200405FCD /* BakedGoodSplatterSmall.scnp */,
+				D887C410208D211A00D9CD2B /* spark.png */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+		D89851781DB029E3000FF14B = {
+			isa = PBXGroup;
+			children = (
+				D8AF36581EC2CAC500797DCA /* components.scnassets */,
+				D89851831DB029E3000FF14B /* RobotRaider */,
+				D898519B1DB029E3000FF14B /* RobotRaiderTests */,
+				D89851A61DB029E3000FF14B /* RobotRaiderUITests */,
+				D89851821DB029E3000FF14B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D842424821DD481A0004A985 /* Products */ = {
+		D89851821DB029E3000FF14B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D842424721DD481A0004A985 /* RobotRaider.app */,
+				D89851811DB029E3000FF14B /* RobotRaider.app */,
+				D89851981DB029E3000FF14B /* RobotRaiderTests.xctest */,
+				D89851A31DB029E3000FF14B /* RobotRaiderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D842424921DD481A0004A985 /* RobotRaider */ = {
+		D89851831DB029E3000FF14B /* RobotRaider */ = {
 			isa = PBXGroup;
 			children = (
-				D842424A21DD481A0004A985 /* AppDelegate.swift */,
-				D842424C21DD481A0004A985 /* ViewController.swift */,
-				D842424E21DD481A0004A985 /* Main.storyboard */,
-				D842425421DD481C0004A985 /* Assets.xcassets */,
-				D842425621DD481C0004A985 /* LaunchScreen.storyboard */,
-				D842425921DD481C0004A985 /* Info.plist */,
-				D842425121DD481B0004A985 /* RobotRaider.xcdatamodeld */,
+				D8A3FE26211A0A6C00C1711D /* sounds */,
+				D81809A31DB59A7300D21EB2 /* Particles */,
+				D89851861DB029E3000FF14B /* GamePlayViewController.swift */,
+				D8ACFE551F5F10810039B6E6 /* RobotHealth.swift */,
+				D8591A40211CFB6B00B51F7B /* NodeSound.swift */,
+				D8EAF80C1F88362100B8DA12 /* PopUpProtocol.swift */,
+				D85459611DF226E9001496E8 /* Level.swift */,
+				D89851841DB029E3000FF14B /* AppDelegate.swift */,
+				D82B29091F205C66003B45D7 /* EmptySpacesList.swift */,
+				D8CF312D2005225900B38EDA /* Hole.swift */,
+				D89851881DB029E3000FF14B /* Main.storyboard */,
+				D80AD3D5213D99680089C90F /* IntroViewController.swift */,
+				D816C5F92140C42A0084ACF8 /* IntroFadeSequenceOverlay.swift */,
+				D8C71D5120769F2B0059D499 /* LevelCollectionViewCell.swift */,
+				D8F7E28621397F39008346CE /* ItemCollectionViewCell.swift */,
+				D86112B11F168337007C16DB /* Maze.swift */,
+				D82EE4201DF8A5D1002CA96D /* FixedLevelComponent.swift */,
+				D89A7F461DC9463A009C48A7 /* ControlPanelOverlay.swift */,
+				D881C1841DC00EBA00F90B9E /* Wall.swift */,
+				D89851B91DB050FB000FF14B /* Robot.swift */,
+				D8A3FE23211A0A2A00C1711D /* GameSounds.swift */,
+				D8191908210223D700AE9F7D /* DestroyedRobot.swift */,
+				D84FFEAB203C949F00D92A16 /* AllModelsAndMaterials.swift */,
+				D8C2E53E210FCDC000DE2C41 /* Tutorial.swift */,
+				D81809951DB56F6D00D21EB2 /* BakedGood.swift */,
+				D8BA50BE1F6C9A0500570451 /* EMPGrenade.swift */,
+				D8C315921F4616A300B7E534 /* PartInLevel.swift */,
+				D89851B71DB0378A000FF14B /* BakeryRoom.swift */,
+				D8C315941F461A1400B7E534 /* PowerUp.swift */,
+				D89851B51DB02BC8000FF14B /* GlobalConstants.swift */,
+				D802542A1E73624D00E1DBE2 /* RandomNumberGenerator.swift */,
+				D86FA7CA1ED8732B00011ABB /* LevelSelectViewController.swift */,
+				D838467A213B637200A384B1 /* UIButtonExtensions.swift */,
+				D8EAF80E1F883DCD00B8DA12 /* LevelStatsPopUpView.swift */,
+				D8673FC8214828DC00E94886 /* UIViewExtension.swift */,
+				D8B1F16120B4D80900902CFF /* VaultLevelCompletionPopUpView.swift */,
+				D83C45B11ED8BE480075B42B /* InventorySelect.swift */,
+				D84C5C3C1F4CE0F90048B107 /* Inventory.swift */,
+				D8B9C49F1EAE561000D735C3 /* PlayerLevelData.swift */,
+				D89851901DB029E3000FF14B /* LaunchScreen.storyboard */,
+				D80713BA1EB2A77600770E49 /* RobotRaider.xcdatamodeld */,
+				D898518E1DB029E3000FF14B /* Assets.xcassets */,
+				D89851931DB029E3000FF14B /* Info.plist */,
 			);
 			path = RobotRaider;
+			sourceTree = "<group>";
+		};
+		D898519B1DB029E3000FF14B /* RobotRaiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				D898519C1DB029E3000FF14B /* RobotRaiderTests.swift */,
+				D898519E1DB029E3000FF14B /* Info.plist */,
+			);
+			path = RobotRaiderTests;
+			sourceTree = "<group>";
+		};
+		D89851A61DB029E3000FF14B /* RobotRaiderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D89851A71DB029E3000FF14B /* RobotRaiderUITests.swift */,
+				D89851A91DB029E3000FF14B /* Info.plist */,
+			);
+			path = RobotRaiderUITests;
+			sourceTree = "<group>";
+		};
+		D8A3FE26211A0A6C00C1711D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D8F78C1F21DBDCD500101A57 /* buttontap2.wav */,
+				D8591A46211D0E1D00B51F7B /* puffofsteam.wav */,
+				D862BD7F214AA2DA00B1A309 /* Powerup6.wav */,
+				D8E71DF3213E27DF007E0901 /* regularspeed2.wav */,
+				D8C575FD213097F4001E950B /* static6.wav */,
+				D8C6A97C21360720005F74A7 /* crash.mp3 */,
+				D8E71DF5213E2E34007E0901 /* regularspeed4.wav */,
+				D8AC1CB72127836A00D8DC9F /* fry1.wav */,
+				D8F78C2321DBE20D00101A57 /* targettap2.wav */,
+				D8AC1CB321277A5900D8DC9F /* splat4.wav */,
+				D8591A44211D0BF300B51F7B /* launcherturn3.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D842424621DD481A0004A985 /* RobotRaider */ = {
+		D89851801DB029E3000FF14B /* RobotRaider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D842425C21DD481D0004A985 /* Build configuration list for PBXNativeTarget "RobotRaider" */;
+			buildConfigurationList = D89851AC1DB029E3000FF14B /* Build configuration list for PBXNativeTarget "RobotRaider" */;
 			buildPhases = (
-				D842424321DD481A0004A985 /* Sources */,
-				D842424421DD481A0004A985 /* Frameworks */,
-				D842424521DD481A0004A985 /* Resources */,
+				D898517D1DB029E3000FF14B /* Sources */,
+				D898517E1DB029E3000FF14B /* Frameworks */,
+				D898517F1DB029E3000FF14B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,81 +320,232 @@
 			);
 			name = RobotRaider;
 			productName = RobotRaider;
-			productReference = D842424721DD481A0004A985 /* RobotRaider.app */;
+			productReference = D89851811DB029E3000FF14B /* RobotRaider.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D89851971DB029E3000FF14B /* RobotRaiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89851AF1DB029E3000FF14B /* Build configuration list for PBXNativeTarget "RobotRaiderTests" */;
+			buildPhases = (
+				D89851941DB029E3000FF14B /* Sources */,
+				D89851951DB029E3000FF14B /* Frameworks */,
+				D89851961DB029E3000FF14B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D898519A1DB029E3000FF14B /* PBXTargetDependency */,
+			);
+			name = RobotRaiderTests;
+			productName = RobotRaiderTests;
+			productReference = D89851981DB029E3000FF14B /* RobotRaiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D89851A21DB029E3000FF14B /* RobotRaiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89851B21DB029E3000FF14B /* Build configuration list for PBXNativeTarget "RobotRaiderUITests" */;
+			buildPhases = (
+				D898519F1DB029E3000FF14B /* Sources */,
+				D89851A01DB029E3000FF14B /* Frameworks */,
+				D89851A11DB029E3000FF14B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89851A51DB029E3000FF14B /* PBXTargetDependency */,
+			);
+			name = RobotRaiderUITests;
+			productName = RobotRaiderUITests;
+			productReference = D89851A31DB029E3000FF14B /* RobotRaiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D842423F21DD481A0004A985 /* Project object */ = {
+		D89851791DB029E3000FF14B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = invasivemachines;
 				TargetAttributes = {
-					D842424621DD481A0004A985 = {
-						CreatedOnToolsVersion = 10.1;
+					D89851801DB029E3000FF14B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 386938G2FR;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					D89851971DB029E3000FF14B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 386938G2FR;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D89851801DB029E3000FF14B;
+					};
+					D89851A21DB029E3000FF14B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 386938G2FR;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D89851801DB029E3000FF14B;
 					};
 				};
 			};
-			buildConfigurationList = D842424221DD481A0004A985 /* Build configuration list for PBXProject "RobotRaider" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			buildConfigurationList = D898517C1DB029E3000FF14B /* Build configuration list for PBXProject "RobotRaider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D842423E21DD481A0004A985;
-			productRefGroup = D842424821DD481A0004A985 /* Products */;
+			mainGroup = D89851781DB029E3000FF14B;
+			productRefGroup = D89851821DB029E3000FF14B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D842424621DD481A0004A985 /* RobotRaider */,
+				D89851801DB029E3000FF14B /* RobotRaider */,
+				D89851971DB029E3000FF14B /* RobotRaiderTests */,
+				D89851A21DB029E3000FF14B /* RobotRaiderUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D842424521DD481A0004A985 /* Resources */ = {
+		D898517F1DB029E3000FF14B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D842425821DD481C0004A985 /* LaunchScreen.storyboard in Resources */,
-				D842425521DD481C0004A985 /* Assets.xcassets in Resources */,
-				D842425021DD481B0004A985 /* Main.storyboard in Resources */,
+				D887C412208D211A00D9CD2B /* spark.png in Resources */,
+				D8610F6C2109795900A0CE9D /* Flame.scnp in Resources */,
+				D89851921DB029E3000FF14B /* LaunchScreen.storyboard in Resources */,
+				D8AC1CB82127836A00D8DC9F /* fry1.wav in Resources */,
+				D862BD80214AA2DA00B1A309 /* Powerup6.wav in Resources */,
+				D85B2309207EB79200405FCD /* BakedGoodSplatterSmall.scnp in Resources */,
+				D8591A45211D0BF300B51F7B /* launcherturn3.wav in Resources */,
+				D885DCB81F91656500AC42D8 /* OnFire.scnp in Resources */,
+				D898518F1DB029E3000FF14B /* Assets.xcassets in Resources */,
+				D8F78C2021DBDCD500101A57 /* buttontap2.wav in Resources */,
+				D8E71DF4213E27E0007E0901 /* regularspeed2.wav in Resources */,
+				D8F78C2421DBE20D00101A57 /* targettap2.wav in Resources */,
+				D8C575FE213097F4001E950B /* static6.wav in Resources */,
+				D8AC1CB421277A5900D8DC9F /* splat4.wav in Resources */,
+				D8E71DF6213E2E34007E0901 /* regularspeed4.wav in Resources */,
+				D898518A1DB029E3000FF14B /* Main.storyboard in Resources */,
+				D8591A47211D0E1D00B51F7B /* puffofsteam.wav in Resources */,
+				D831AD101F91588C0038BA0B /* ShortCircuiting.scnp in Resources */,
+				D831AD111F91588C0038BA0B /* bokeh.png in Resources */,
+				D8C6A97D21360720005F74A7 /* crash.mp3 in Resources */,
+				D81809A71DB59A9200D21EB2 /* BakedGoodSplatter.scnp in Resources */,
+				D8AF36591EC2CAC500797DCA /* components.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89851961DB029E3000FF14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89851A11DB029E3000FF14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D842424321DD481A0004A985 /* Sources */ = {
+		D898517D1DB029E3000FF14B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D842424D21DD481A0004A985 /* ViewController.swift in Sources */,
-				D842425321DD481B0004A985 /* RobotRaider.xcdatamodeld in Sources */,
-				D842424B21DD481A0004A985 /* AppDelegate.swift in Sources */,
+				D85459621DF226E9001496E8 /* Level.swift in Sources */,
+				D89851871DB029E3000FF14B /* GamePlayViewController.swift in Sources */,
+				D82B290A1F205C66003B45D7 /* EmptySpacesList.swift in Sources */,
+				D86112B21F168337007C16DB /* Maze.swift in Sources */,
+				D80AD3D6213D99680089C90F /* IntroViewController.swift in Sources */,
+				D89851B81DB0378A000FF14B /* BakeryRoom.swift in Sources */,
+				D89851851DB029E3000FF14B /* AppDelegate.swift in Sources */,
+				D89851B61DB02BC8000FF14B /* GlobalConstants.swift in Sources */,
+				D89A7F471DC9463A009C48A7 /* ControlPanelOverlay.swift in Sources */,
+				D8673FC9214828DD00E94886 /* UIViewExtension.swift in Sources */,
+				D8ACFE561F5F10810039B6E6 /* RobotHealth.swift in Sources */,
+				D81809961DB56F6D00D21EB2 /* BakedGood.swift in Sources */,
+				D881C1851DC00EBA00F90B9E /* Wall.swift in Sources */,
+				D84C5C3D1F4CE0F90048B107 /* Inventory.swift in Sources */,
+				D802542B1E73624D00E1DBE2 /* RandomNumberGenerator.swift in Sources */,
+				D8A3FE24211A0A2A00C1711D /* GameSounds.swift in Sources */,
+				D8591A41211CFB6B00B51F7B /* NodeSound.swift in Sources */,
+				D83C45B21ED8BE480075B42B /* InventorySelect.swift in Sources */,
+				D816C5FA2140C42A0084ACF8 /* IntroFadeSequenceOverlay.swift in Sources */,
+				D8C71D5220769F2B0059D499 /* LevelCollectionViewCell.swift in Sources */,
+				D82EE4211DF8A5D1002CA96D /* FixedLevelComponent.swift in Sources */,
+				D86FA7CB1ED8732B00011ABB /* LevelSelectViewController.swift in Sources */,
+				D8F7E28721397F39008346CE /* ItemCollectionViewCell.swift in Sources */,
+				D84FFEAC203C949F00D92A16 /* AllModelsAndMaterials.swift in Sources */,
+				D8EAF80F1F883DCD00B8DA12 /* LevelStatsPopUpView.swift in Sources */,
+				D8CF312E2005225900B38EDA /* Hole.swift in Sources */,
+				D8C315931F4616A300B7E534 /* PartInLevel.swift in Sources */,
+				D8C315951F461A1400B7E534 /* PowerUp.swift in Sources */,
+				D80713BC1EB2A77600770E49 /* RobotRaider.xcdatamodeld in Sources */,
+				D8BA50BF1F6C9A0500570451 /* EMPGrenade.swift in Sources */,
+				D8191909210223D700AE9F7D /* DestroyedRobot.swift in Sources */,
+				D8B1F16220B4D80900902CFF /* VaultLevelCompletionPopUpView.swift in Sources */,
+				D8EAF80D1F88362100B8DA12 /* PopUpProtocol.swift in Sources */,
+				D8C2E53F210FCDC000DE2C41 /* Tutorial.swift in Sources */,
+				D89851BA1DB050FB000FF14B /* Robot.swift in Sources */,
+				D838467B213B637200A384B1 /* UIButtonExtensions.swift in Sources */,
+				D8B9C4A01EAE561000D735C3 /* PlayerLevelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89851941DB029E3000FF14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D898519D1DB029E3000FF14B /* RobotRaiderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D898519F1DB029E3000FF14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89851A81DB029E3000FF14B /* RobotRaiderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D898519A1DB029E3000FF14B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89851801DB029E3000FF14B /* RobotRaider */;
+			targetProxy = D89851991DB029E3000FF14B /* PBXContainerItemProxy */;
+		};
+		D89851A51DB029E3000FF14B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89851801DB029E3000FF14B /* RobotRaider */;
+			targetProxy = D89851A41DB029E3000FF14B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		D842424E21DD481A0004A985 /* Main.storyboard */ = {
+		D89851881DB029E3000FF14B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D842424F21DD481A0004A985 /* Base */,
+				D89851891DB029E3000FF14B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D842425621DD481C0004A985 /* LaunchScreen.storyboard */ = {
+		D89851901DB029E3000FF14B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D842425721DD481C0004A985 /* Base */,
+				D89851911DB029E3000FF14B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,17 +553,15 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D842425A21DD481C0004A985 /* Debug */ = {
+		D89851AA1DB029E3000FF14B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -195,15 +580,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -217,27 +602,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = RobotRaider;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D842425B21DD481D0004A985 /* Release */ = {
+		D89851AB1DB029E3000FF14B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -256,15 +640,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -272,69 +656,155 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = RobotRaider;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D842425D21DD481D0004A985 /* Debug */ = {
+		D89851AD1DB029E3000FF14B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 386938G2FR;
 				INFOPLIST_FILE = RobotRaider/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.invasivemachines.RobotRaider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D842425E21DD481D0004A985 /* Release */ = {
+		D89851AE1DB029E3000FF14B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 386938G2FR;
 				INFOPLIST_FILE = RobotRaider/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.invasivemachines.RobotRaider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D89851B01DB029E3000FF14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 386938G2FR;
+				INFOPLIST_FILE = RobotRaiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.invasivemachines.RobotRaiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotRaider.app/RobotRaider";
+			};
+			name = Debug;
+		};
+		D89851B11DB029E3000FF14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 386938G2FR;
+				INFOPLIST_FILE = RobotRaiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.invasivemachines.RobotRaiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotRaider.app/RobotRaider";
+			};
+			name = Release;
+		};
+		D89851B31DB029E3000FF14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 386938G2FR;
+				INFOPLIST_FILE = RobotRaiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.invasivemachines.RobotRaiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = RobotRaider;
+			};
+			name = Debug;
+		};
+		D89851B41DB029E3000FF14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 386938G2FR;
+				INFOPLIST_FILE = RobotRaiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.invasivemachines.RobotRaiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = RobotRaider;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D842424221DD481A0004A985 /* Build configuration list for PBXProject "RobotRaider" */ = {
+		D898517C1DB029E3000FF14B /* Build configuration list for PBXProject "RobotRaider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D842425A21DD481C0004A985 /* Debug */,
-				D842425B21DD481D0004A985 /* Release */,
+				D89851AA1DB029E3000FF14B /* Debug */,
+				D89851AB1DB029E3000FF14B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D842425C21DD481D0004A985 /* Build configuration list for PBXNativeTarget "RobotRaider" */ = {
+		D89851AC1DB029E3000FF14B /* Build configuration list for PBXNativeTarget "RobotRaider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D842425D21DD481D0004A985 /* Debug */,
-				D842425E21DD481D0004A985 /* Release */,
+				D89851AD1DB029E3000FF14B /* Debug */,
+				D89851AE1DB029E3000FF14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89851AF1DB029E3000FF14B /* Build configuration list for PBXNativeTarget "RobotRaiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89851B01DB029E3000FF14B /* Debug */,
+				D89851B11DB029E3000FF14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89851B21DB029E3000FF14B /* Build configuration list for PBXNativeTarget "RobotRaiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89851B31DB029E3000FF14B /* Debug */,
+				D89851B41DB029E3000FF14B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -342,17 +812,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D842425121DD481B0004A985 /* RobotRaider.xcdatamodeld */ = {
+		D80713BA1EB2A77600770E49 /* RobotRaider.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D842425221DD481B0004A985 /* RobotRaider.xcdatamodel */,
+				D80713BB1EB2A77600770E49 /* RobotRaider.xcdatamodel */,
 			);
-			currentVersion = D842425221DD481B0004A985 /* RobotRaider.xcdatamodel */;
+			currentVersion = D80713BB1EB2A77600770E49 /* RobotRaider.xcdatamodel */;
 			path = RobotRaider.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = D842423F21DD481A0004A985 /* Project object */;
+	rootObject = D89851791DB029E3000FF14B /* Project object */;
 }
